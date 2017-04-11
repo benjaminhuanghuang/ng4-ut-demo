@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-@Pipe({ name: 'mask' })
+@Pipe({name: 'mask'})
 export class MaskPipe implements PipeTransform {
 
   transform(value: string, selection: string) {
@@ -15,5 +15,4 @@ export class MaskPipe implements PipeTransform {
     }
     return masked;
   }
-
 }

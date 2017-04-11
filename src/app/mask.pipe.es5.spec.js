@@ -1,6 +1,6 @@
 describe('MaskPipe', () => {
 
-  const maskPipe = new MaskPipe();
+  const maskPipe = new MaskPipeES5();
 
   it('should hide everything when no letters selected', () => {
     const masked = maskPipe.transform('ANGULAR', '');

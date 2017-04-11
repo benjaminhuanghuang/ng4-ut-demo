@@ -1,4 +1,4 @@
-class MaskPipe {
+class MaskPipeES5 {
 
   transform(value, selection) {
     let masked = '';
