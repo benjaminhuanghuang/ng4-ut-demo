@@ -1,39 +1,50 @@
-import {MaskPipe} from './mask.pipe';
+import { MaskPipe } from './mask.pipe';
 
 // need @types/jasmine
-// describe('MaskPipe', () => {
-//     const maskPipe = new MaskPipe();
-    
-//     it('should hide everything when no letters selected', () => {
-//         const masked = maskPipe.transform('ANGULAR', '');
-//         expect(masked).toBe('*******');
-//     });
+describe('MaskPipe', () => {
+    let maskPipe: MaskPipe;
 
-//     it('should reveal only the selected letter', () => {
-//         const masked = maskPipe.transform('ANGULAR', 'A');
-//         expect(masked).toBe('A****A*');
-//     });
+    afterAll(() => {
 
-//     it('should reveal only the selected letters', () => {
-//         const masked = maskPipe.transform('ANGULAR', 'ABCL');
-//         expect(masked).toBe('A***LA*');
-//     });
+    });
 
-//     it('should reveal everything when all letters selected', () => {
-//         const masked = maskPipe.transform('ANGULAR', 'ANGULR');
-//         expect(masked).toBe('ANGULAR');
-//     });
+    afterAll(() => {
+
+    });
+
+    beforeEach(() => {
+        //setup
+        maskPipe = new MaskPipe();
+    });
+
+    afterEach(() => {
+        // clean up tear down
+    });
 
 
-//     it("check", function() {
-//         expect('abcd').toEqual('dcba');
-//     });
-// });
+    it('should hide everything when no letters selected', () => {
+        const masked = maskPipe.transform('ANGULAR', '');
+        expect(masked).toBe('*******');
+    });
 
-describe('MaskPipe', function(){
-            console.log("asdfasdfsadf   ");
+    it('should reveal only the selected letter', () => {
+        const masked = maskPipe.transform('ANGULAR', 'A');
+        expect(masked).toBe('A****A*');
+    });
 
-    it("check", function() {
+    it('should reveal only the selected letters', () => {
+        const masked = maskPipe.transform('ANGULAR', 'ABCL');
+        expect(masked).toBe('A***LA*');
+    });
+
+    it('should reveal everything when all letters selected', () => {
+        const masked = maskPipe.transform('ANGULAR', 'ANGULR');
+        expect(masked).toBe('ANGULAR');
+    });
+
+
+    it("check", function () {
         expect('abcd').toEqual('dcba');
     });
 });
+

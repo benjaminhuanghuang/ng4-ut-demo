@@ -1,5 +1,5 @@
 {
-  "name": "ng4-webpack",
+  "name": "ng4-webpack-ut",
   "version": "0.1.0",
   "scripts": {
     "build": "webpack -p",
@@ -37,6 +37,7 @@
     "raw-loader": "^0.5.1",
     "typescript": "^2.2.2",
     "webpack": "^2.3.3",
-    "webpack-dev-server": "^2.4.2"
+    "webpack-dev-server": "^2.4.2",
+    "karma-sourcemap-loader":"^0.3.7"
   }
 }
