@@ -2,7 +2,7 @@ module.exports = function(config) {
   config.set({
     frameworks: ['jasmine'],
     files: [
-      {pattern: './src/specs.ts', watched: false}
+      { pattern: './src/specs.ts', watched: false }
     ],
     preprocessors: {
       './src/specs.ts': ['webpack']
