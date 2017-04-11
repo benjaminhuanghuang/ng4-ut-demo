@@ -1,3 +1,6 @@
+## Dependency
+  "jasmine-core": "^2.5.2",
+  
 ## Run UT in html page (for .js)
 ```html
 <html>
