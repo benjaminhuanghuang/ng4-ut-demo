@@ -4,10 +4,15 @@ import 'zone.js/dist/zone';
 
 import './app/mask.pipe.spec'
 
-declare var require: any;
+// import './app/mask.pipe.spec.ts'  // we don't want to modify specs.ts when add new test file
 
+// using the "require.context"
 function requireAll(requireContext){
   return requireContext.keys().map(requireContext);
 }
 
-requireAll(require.context('./', true, /\.spec\.ts$/))
+declare var require: any;
+// passing directory, use sub-directories, regular expression
+// return all files match regx
+// the "requireAll" function iterates through each one of them and imports it using that "requireContext"
+requireAll(require.context('./app', true, /\.spec\.ts$/))
