@@ -41,10 +41,5 @@ describe('MaskPipe', () => {
         const masked = maskPipe.transform('ANGULAR', 'ANGULR');
         expect(masked).toBe('ANGULAR');
     });
-
-
-    it("check", function () {
-        expect('abcd').toEqual('dcba');
-    });
 });
 

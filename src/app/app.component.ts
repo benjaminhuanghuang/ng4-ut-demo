@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     solution = "Angular2";
-    selection = '2';
+    selection = 'A2';
     display = "*******";
 }

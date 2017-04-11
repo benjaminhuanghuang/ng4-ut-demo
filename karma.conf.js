@@ -5,12 +5,15 @@ module.exports = function(config) {
       { pattern: './src/specs.ts', watched: false }
     ],
     preprocessors: {
-      './src/specs.ts': ['webpack','sourcemap']
+      './src/specs.ts': ['webpack']
+    },
+    mime: {
+      'text/x-typescript': ['ts','tsx']
     },
     webpack: {
       module: {
         loaders: [
-          {test: /\.ts$/, exclude: /\.component.ts$/, loader: 'awesome-typescript-loader'},
+          {test: /\.ts$/, loader: 'awesome-typescript-loader'},
           {test: /\.html$/, loader: 'raw-loader'},
           {test: /\.css$/, loader: 'raw-loader'}
         ]

@@ -7,3 +7,10 @@
     import 'core-js/es7/reflect';
     import 'zone.js/dist/zone'; 
     we can put them in vendor.ts separately.
+
+## Executed 0 of 0 ERROR
+    Add mime to karma.conf.js
+    mime: {
+      'text/x-typescript': ['ts','tsx']
+    },
+  

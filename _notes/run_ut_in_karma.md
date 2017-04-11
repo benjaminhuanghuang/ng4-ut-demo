@@ -16,3 +16,4 @@
 ## Run Karma
     $ karma start
     $ karma karma start --single-run
+    or add singleRun: true to karma.config.js
