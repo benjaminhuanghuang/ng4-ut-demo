@@ -19,9 +19,9 @@ module.exports = function(config) {
         extensions: ['.js', '.ts', '.html', '.css']
       }
     },
-    webpackMiddleware: {
-      stats: 'errors-only'
-    },
+    // webpackMiddleware: {
+    //   stats: 'errors-only'
+    // },
     browsers: ['Chrome']
   });
 };
