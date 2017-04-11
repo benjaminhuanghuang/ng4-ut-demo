@@ -4,7 +4,6 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: {
-        vendor: './src/vendor.ts',
         main: './src/main.ts'
     },
     output: {
