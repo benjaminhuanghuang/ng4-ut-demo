@@ -5,7 +5,8 @@
     "build": "webpack -p",
     "build:prod": "webpack -p --progress",
     "postinstall": "",
-    "serve": "webpack-dev-server --inline --progress"
+    "serve": "webpack-dev-server --inline --progress",
+    "test":"karma start --single-run"
   },
   "dependencies": {
     "@angular/common": "^4.0.0",
@@ -32,6 +33,7 @@
     "angular2-template-loader": "^0.6.2",
     "jasmine-core":"^2.5.2",
     "@types/jasmine":"^2.5.47",
+    "@types/webpack":"^2.2.14",
     "karma":"^1.6.0",
     "karma-jasmine":"^1.1.0",
     "karma-webpack":"^2.0.3",
