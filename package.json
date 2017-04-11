@@ -6,7 +6,7 @@
     "build:prod": "webpack -p --progress",
     "postinstall": "",
     "serve": "webpack-dev-server --inline --progress",
-    "test":"karma start --single-run"
+    "test": "karma start --single-run"
   },
   "dependencies": {
     "@angular/common": "^4.0.0",
@@ -23,20 +23,20 @@
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
+    "@types/jasmine": "^2.5.47",
+    "@types/node": "^7.0.12",
+    "@types/webpack": "^2.2.14",
+    "angular2-template-loader": "^0.6.2",
     "awesome-typescript-loader": "^3.1.2",
     "html-webpack-plugin": "^2.28.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.6.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-webpack": "^2.0.3",
+    "raw-loader": "^0.5.1",
     "typescript": "^2.2.2",
     "webpack": "^2.3.3",
-    "webpack-dev-server": "^2.4.2",
-    "raw-loader": "^0.5.1",
-    "@types/node": "^7.0.12",
-    "angular2-template-loader": "^0.6.2",
-    "jasmine-core":"^2.5.2",
-    "@types/jasmine":"^2.5.47",
-    "@types/webpack":"^2.2.14",
-    "karma":"^1.6.0",
-    "karma-jasmine":"^1.1.0",
-    "karma-webpack":"^2.0.3",
-    "karma-chrome-launcher":"^2.0.0"
+    "webpack-dev-server": "^2.4.2"
   }
 }
