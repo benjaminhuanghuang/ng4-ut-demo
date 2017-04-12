@@ -3,9 +3,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 @Component({
   selector: 'letter-buttons',
   template: `
-    <button *ngFor="let letter of alphabet"
-      (click)="select(letter)"
-      [disabled]="selection.includes(letter)">{{letter}}</button>
+    <div class="letter-buttons">
+      <button *ngFor="let letter of alphabet"
+        (click)="select(letter)"
+        [disabled]="selection.includes(letter)">{{letter}}</button>
+    </div>
   `
 })
 export class LetterButtonsComponent {
